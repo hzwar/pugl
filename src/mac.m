@@ -1271,7 +1271,7 @@ puglRealize(PuglView* view)
     NSView* pview = (NSView*)view->parent;
     [pview addSubview:impl->wrapperView];
     [impl->drawView setHidden:NO];
-    [[impl->drawView window] makeFirstResponder:impl->wrapperView];
+    // [[impl->drawView window] makeFirstResponder:impl->wrapperView];
   } else {
     unsigned style =
       (NSClosableWindowMask | NSTitledWindowMask | NSMiniaturizableWindowMask);
